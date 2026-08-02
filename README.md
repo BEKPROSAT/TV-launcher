@@ -6,11 +6,14 @@ Samsung DeX-focused Android launcher for turning a Galaxy S20+ into a TV streami
 
 - Kotlin + Jetpack Compose Android app
 - Designed for landscape DeX/TV use
+- Home screen shows pinned apps only
+- Dedicated **See All Apps** tile opens the App Drawer
+- Visible **Settings** tile on the Home screen
+- Persistent top-right status bar with time and Wi-Fi signal estimate
 - Large focusable app tiles
 - Keyboard, D-pad, and mouse-friendly navigation
 - Installed app discovery through `PackageManager`
-- Favorites row with `F` key pinning
-- Recently used row
+- Home pinning with `F` key support
 - Debug APK build through GitHub Actions
 
 ## No Android Studio Workflow
@@ -37,13 +40,18 @@ On the phone:
 - Arrow keys or D-pad: move focus
 - Enter or center/select: open focused app
 - Mouse click: open app
-- `F`: pin or unpin focused app
+- `F`: pin or unpin focused app from the App Drawer or focused app tile
 
 ## Planned Next
 
 - DeX connect/disconnect handling
-- Settings screen
-- Pinned app reordering
+- Drag-and-drop Home screen layout
+- Tile resizing with persisted positions and sizes
+- Full Settings implementation
+- Wallpaper picker
+- Android widget hosting
+- Accessibility controls including high contrast and reduce motion
 - Custom web tiles
+- Best-effort landscape launch behavior for third-party apps
 - Phone-as-remote companion app
 - Optional kiosk/screen-pinning mode
